@@ -1,3 +1,17 @@
+header {
+    display:flex;
+
+    img {
+        border-radius: 90%;    
+    }
+}
+
 h1 {
-    color: red;
+    text-align: center;
+    font-size: 2.75em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
 }
