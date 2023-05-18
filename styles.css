@@ -1,16 +1,44 @@
+* {
+  margin: 0;
+}
+
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 header img {
+  padding: 16px;
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
 }
 
 h1 {
+  padding: 24px;
+  max-width: 100%;
+  background-color: orange;
   text-align: center;
   font-size: 2.75em;
+}
+
+main {
+  min-width: 100%;
+}
+
+main #tabs #icons.tab {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  text-align: center;
+}
+
+main #tabs #icons.tab i {
+  padding: 0 5px;
+  font-size: 1.75rem;
 }
 
 footer {

@@ -1,15 +1,51 @@
-header {
-    display:flex;
+$icon-width-and-height: 1px;
 
+* {
+    margin:0;
+}
+
+header {
+    display:block;
+    padding:0;
+    margin:0;
     img {
-        border-radius: 50%;    
+        padding: 16px;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px; 
+        overflow: hidden; 
     }
 }
 
 h1 {
+    padding:24px;
+    max-width: 100%;
+    background-color: orange;
     text-align: center;
     font-size: 2.75em;
 }
+
+main {
+    min-width: 100%;
+    #tabs {
+        #icons.tab {
+            transition: transform 2s;
+                :hover {
+                    //
+                }
+                text-align: center;
+                i {
+                    padding: 0 5px;
+                    font-size: 1.75rem;
+                
+                        
+                
+            }
+        }
+    }
+}
+    
+
 
 footer {
     text-align: center;
