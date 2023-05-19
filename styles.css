@@ -145,10 +145,6 @@ main #tabs #icons.tab i {
   color: black;
 }
 
-main #tabs #icons.tab i :hover {
-  font-size: 5em !important;
-}
-
 footer {
   text-align: center;
   font-family: monospace;
