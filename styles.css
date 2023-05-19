@@ -95,16 +95,40 @@ main #tabs .tab h2 {
   padding: 16px 0;
 }
 
-main #tabs .tab li {
-  font-size: 1.2em;
+main #tabs .tab ul li {
+  font-size: 1.25em;
   font-family: monospace;
   font-weight: bold;
   list-style: none;
 }
 
-main #tabs .tab li::before {
+main #tabs .tab ul li::before {
   content: "\25B8";
   padding: 4px;
+}
+
+main #tabs #classes strong {
+  font-family: monospace;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+main #tabs #classes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 16px 0;
+  font-size: 1.2em;
+}
+
+main #tabs #classes ul li::before {
+  content: "";
+}
+
+main #tabs #classes ul li::after {
+  content: ", ";
 }
 
 main #tabs #icons.tab {
@@ -119,6 +143,10 @@ main #tabs #icons.tab i {
   padding: 0 5px;
   font-size: 1.75rem;
   color: black;
+}
+
+main #tabs #icons.tab i :hover {
+  font-size: 5em !important;
 }
 
 footer {
