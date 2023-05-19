@@ -1,33 +1,100 @@
-$icon-width-and-height: 1px;
+$text-font: monospace;
+$colour-one: rgb(107, 159, 207);
+$colour-two: rgb(84, 82, 167);
+$icon-size: 1.75rem;
 
 * {
+    
     margin:0;
+}
+
+body {
+    background-color: $colour-one;
 }
 
 header {
     display:block;
     padding:0;
     margin:0;
-    img {
-        padding: 16px;
-        border-radius: 50%;
-        height: 200px;
-        width: 200px; 
-        overflow: hidden; 
+    #header-div {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        p {
+            font-family: $text-font;
+            padding:8px;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: $colour-two;
+            padding:8px;
+            border-radius: 8px;
+            font-size: $icon-size;
+            color:black;
+            li {
+                
+            
+                i {
+                    padding:8px;
+                }
+                .bi-filetype-scss::before {
+                    margin-top: 8px;
+                }
+            }
+        }
+        img {
+            margin: 12px;
+            padding: 0;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px; 
+            overflow: hidden; 
+            box-shadow: 12px 12px 16px 8px black;
+        }
     }
+    
 }
 
 h1 {
     padding:24px;
     max-width: 100%;
-    background-color: orange;
+    background-color: $colour-two;
     text-align: center;
+    font-family: $text-font;
     font-size: 2.75em;
 }
 
 main {
-    min-width: 100%;
+    max-width: 100%;
+
     #tabs {
+        .tab {
+            margin: 12px;
+            border-radius: 12px;
+            background-color: $colour-two;
+            padding:16px;
+            h2 {
+                font-family: $text-font;
+                font-weight:bold;
+                font-size: 2.2em;
+                padding: 16px 0;
+            }
+            li {
+                font-size: 1.2em;
+                font-family: $text-font;
+                font-weight: bold;
+                list-style: none;
+            }
+            li::before {
+                content: "\25B8";
+                padding:4px;
+            
+            }
+        }
         #icons.tab {
             transition: transform 2s;
                 :hover {
@@ -36,7 +103,8 @@ main {
                 text-align: center;
                 i {
                     padding: 0 5px;
-                    font-size: 1.75rem;
+                    font-size: $icon-size;
+                    color:black
                 
                         
                 
@@ -48,6 +116,8 @@ main {
 
 
 footer {
+    
     text-align: center;
-    font-size: 0.85em;
+    font-family: $text-font;
+    font-size: 1.2em;
 }

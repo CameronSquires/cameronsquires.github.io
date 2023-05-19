@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/e0e9940b90.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e0e9940b90.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Cameron's Portfolio</title>
     <meta name="description" content="Cameron Squires' Portfolio" />
     <meta name="keywords" content="CameronSquires, Cameron, Squires, Portfolio" />
@@ -14,35 +14,69 @@
 <body>
     <header>
         <h1>Cameron Squires</h1>
-        <img id="picture-of-me" src="Picture of me.JPG", alt="Picture of myself" />
+        <div id="header-div">
+            <img id="picture-of-me" src="Picture of me.JPG", alt="Picture of myself" />
+            <div id="programming-languages">
+                <p>Languages I Use:</p>
+                <ul>
+                    <li><i class="fa-brands fa-python"></i></li>
+                    <li><i class="fa-brands fa-java"></i><li>
+                    <li><i class="fa-solid fa-c"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="bi bi-filetype-scss"></i></li>
+            </ul>
+            </div>
+        </div>
         
     </header>
 
     <main>
         <section id="tabs">
-            <div class="tab">
-                
+            <div class="tab" id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>High School Graduate (EVH)  94.14 GPA, Graduated with Honours</li>
+                    <li>Currently a B.Sc Computer Science Major at MUN</li>
+                </ul>
             </div>
-            <div class="tab">
-                
+            <div class="tab" id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>HTML/CSS - TestDome</li>
+                    <li>Introduction to Cybersecurity - Codecademy</li>
+                    <li>Junior Mavrx Sofftware Bootcamp Program Certificate - Keyin College</li>
+                    <li>Learn Python 3 Course - Codecademy</li>
+                    <li>Learn the Command Line Course - Codecademy</li>
+                </ul>
             </div>
-            <div class="tab">
-                
+            <div class="tab" id="awards">
+                <h2>Honours & Awards</h2>
+                <ul>
+                    <li>Waterloo University Cayley Math Competition Medal - Waterloo University</li>
+                    <li>Chief Scout Award - Scouts Canada</li>
+                </ul>
             </div>
-            <div class="tab">
-                
+            <div class="tab" id="languages">
+                <h2>Languages</h2>
+                    <ul>
+                        <li>English</li>
+                        <li>French</li>
+                    </ul>
             </div>
             <div class="tab" id="icons">
                 
                 <a href="https://github.com/CameronSquires/"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/cameron-squires-b393b2209/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:cameronsquires@live.ca"><i class="fa-solid fa-envelope" style="color: #551a8b;"></i></a>
+                <a href="mailto:cameronsquires@live.ca"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </section>
     </main>
 
     <footer>
+        <p>
             Cameron Squires 2023
+        </p>
     </footer>
     
 </body>
