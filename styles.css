@@ -82,6 +82,7 @@ main {
 }
 
 main #tabs .tab {
+  display: block;
   margin: 12px;
   border-radius: 12px;
   background-color: #5452a7;
@@ -100,6 +101,8 @@ main #tabs .tab ul li {
   font-family: monospace;
   font-weight: bold;
   list-style: none;
+  max-width: 75%;
+  overflow-x: auto;
 }
 
 main #tabs .tab ul li::before {
@@ -107,10 +110,18 @@ main #tabs .tab ul li::before {
   padding: 4px;
 }
 
+main #tabs #classes {
+  display: block;
+}
+
 main #tabs #classes strong {
   font-family: monospace;
   font-size: 1.5em;
   text-decoration: underline;
+}
+
+main #tabs #classes p {
+  font-size: 1.25em;
 }
 
 main #tabs #classes ul {

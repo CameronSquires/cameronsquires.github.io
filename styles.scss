@@ -75,6 +75,7 @@ main {
 
     #tabs {
         .tab {
+            display:block;
             margin: 12px;
             border-radius: 12px;
             background-color: $colour-two;
@@ -94,6 +95,8 @@ main {
                     font-family: $text-font;
                     font-weight: bold;
                     list-style: none;
+                    max-width: 75%;
+                    overflow-x: auto;
                     
                 }
                 li::before {
@@ -106,11 +109,15 @@ main {
         }
 
         #classes {
+            display: block;
             strong {
                 font-family: $text-font;
                 font-size: 1.5em;
                 text-decoration: underline;    
                 
+            }
+            p {
+                font-size: 1.25em;
             }
             ul {
                 display:flex;
@@ -126,6 +133,7 @@ main {
                 }
             }
         }
+
 
         #icons.tab {
             transition: transform 2s;
