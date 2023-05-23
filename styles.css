@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  word-wrap: break-word;
 }
 
 body {
@@ -50,11 +51,14 @@ header #header-div ul {
 }
 
 header #header-div ul li i {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   padding: 8px;
 }
 
-header #header-div ul li .bi-filetype-scss::before {
-  margin-top: 8px;
+header #header-div ul li i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 header #header-div img {
@@ -66,6 +70,10 @@ header #header-div img {
   overflow: hidden;
   -webkit-box-shadow: 12px 12px 16px 8px black;
           box-shadow: 12px 12px 16px 8px black;
+}
+
+.no-link-colour {
+  color: inherit;
 }
 
 h1 {
@@ -102,7 +110,6 @@ main #tabs .tab ul li {
   font-weight: bold;
   list-style: none;
   max-width: 75%;
-  overflow-x: auto;
 }
 
 main #tabs .tab ul li::before {
@@ -151,9 +158,26 @@ main #tabs #icons.tab {
 }
 
 main #tabs #icons.tab i {
+  -webkit-transition: all .15 ease-in-out;
+  transition: all .15 ease-in-out;
   padding: 0 5px;
   font-size: 1.75rem;
   color: black;
+}
+
+main #tabs #icons.tab i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.hover-expand {
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+.hover-expand:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 footer {

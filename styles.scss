@@ -6,6 +6,7 @@ $icon-size: 1.75rem;
 * {
     
     margin:0;
+    word-wrap: break-word;
 }
 
 body {
@@ -39,11 +40,13 @@ header {
                 
             
                 i {
+                    transition: all 0.8s ease-in-out;
                     padding:8px;
                 }
-                .bi-filetype-scss::before {
-                    margin-top: 8px;
+                i:hover{
+                    transform:rotate(360deg)
                 }
+                
             }
         }
         img {
@@ -58,7 +61,9 @@ header {
     }
     
 }
-
+.no-link-colour {
+    color: inherit;
+}
 h1 {
     padding:24px;
     max-width: 100%;
@@ -96,7 +101,6 @@ main {
                     font-weight: bold;
                     list-style: none;
                     max-width: 75%;
-                    overflow-x: auto;
                     
                 }
                 li::before {
@@ -140,14 +144,29 @@ main {
                 text-align: center;
                 
                 i {
+                    transition: all .15 ease-in-out;
                     padding: 0 5px;
                     font-size: $icon-size;                     
                     color:black;                
+                }
+                i:hover {
+                    transform: rotate(360deg);
+                }
             }
         }
     }
-}
     
+.hover-expand {
+    transition: .15s ease-in-out;
+
+    
+}
+
+.hover-expand:hover {
+    
+        transform: scale(1.01);
+}
+
 
 
 footer {
