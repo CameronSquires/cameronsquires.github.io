@@ -167,6 +167,17 @@ main {
         transform: scale(1.01);
 }
 
+.hover-expand-image {
+    transition: .3s ease-in-out;
+
+    
+}
+
+.hover-expand-image:hover {
+    
+        transform: scale(1.15);
+}
+
 
 
 footer {
