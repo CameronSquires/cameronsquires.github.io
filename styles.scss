@@ -4,7 +4,6 @@ $colour-two: rgb(84, 82, 167);
 $icon-size: 1.75rem;
 
 * {
-    
     margin:0;
     word-wrap: break-word;
 }
@@ -17,16 +16,19 @@ header {
     display:block;
     padding:0;
     margin:0;
+
     #header-div {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-around;
+
         p {
             font-family: $text-font;
             padding:8px;
             font-size: 1.2em;
         }
+
         ul {
             list-style: none;
             display: flex;
@@ -36,19 +38,21 @@ header {
             border-radius: 8px;
             font-size: $icon-size;
             color:black;
+
             li {
                 
-            
                 i {
                     transition: all 0.8s ease-in-out;
                     padding:8px;
                 }
+
                 i:hover{
                     transform:rotate(360deg)
                 }
                 
             }
         }
+
         img {
             margin: 12px;
             padding: 0;
@@ -59,11 +63,12 @@ header {
             box-shadow: 12px 12px 16px 8px black;
         }
     }
-    
 }
+
 .no-link-colour {
     color: inherit;
 }
+
 h1 {
     padding:24px;
     max-width: 100%;
@@ -73,9 +78,7 @@ h1 {
     font-size: 2.75em;
 }
 
-
 main {
-    
     max-width: 100%;
 
     #tabs {
@@ -86,14 +89,13 @@ main {
             background-color: $colour-two;
             padding:16px;
             
-            
-            
             h2 {
                 font-family: $text-font;
                 font-weight:bold;
                 font-size: 2.2em;
                 padding: 16px 0;
             }
+
             ul {
                 li {
                     font-size: 1.25em;
@@ -101,28 +103,28 @@ main {
                     font-weight: bold;
                     list-style: none;
                     max-width: 75%;
-                    
                 }
+
                 li::before {
                     content: "\25B8";
                     padding:4px;
-                
                 }
             }
-            
         }
 
         #classes {
             display: block;
+
             strong {
                 font-family: $text-font;
                 font-size: 1.5em;
                 text-decoration: underline;    
-                
             }
+
             p {
                 font-size: 1.25em;
             }
+
             ul {
                 display:flex;
                 list-style-type: none;
@@ -149,39 +151,49 @@ main {
                     font-size: $icon-size;                     
                     color:black;                
                 }
+
                 i:hover {
                     transform: rotate(360deg);
                 }
             }
         }
+
     }
-    
+
+#project-list {
+    padding-left: 0;
+}
+.project {
+    margin:12px 0;
+}
+
+.projectlink {
+    font-size: 1.5em;
+    text-decoration: none;
+    color:black;
+    font-family: 'Consolas';
+}
+.projectlink:hover {
+    text-decoration: underline;
+}
+
 .hover-expand {
     transition: .15s ease-in-out;
-
-    
 }
 
 .hover-expand:hover {
-    
         transform: scale(1.01);
 }
 
 .hover-expand-image {
     transition: .3s ease-in-out;
-
-    
 }
 
 .hover-expand-image:hover {
-    
         transform: scale(1.15);
 }
 
-
-
 footer {
-    
     text-align: center;
     font-family: $text-font;
     font-size: 1.2em;
