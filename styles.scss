@@ -8,6 +8,15 @@ $icon-size: 1.75rem;
     word-wrap: break-word;
 }
 
+#name {
+    transition: 0.5s ease-in-out;
+}
+
+#name:hover {
+    color: #172541;
+    font-size: 3.25em;
+}
+
 body {
     background-color: $colour-one;
 }
