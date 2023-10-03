@@ -138,6 +138,10 @@ main #tabs #icons.tab i:hover {
   transform: rotate(360deg);
 }
 
+.in-progress {
+  color: navy;
+}
+
 #project-list {
   padding-left: 0;
 }
